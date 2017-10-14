@@ -51,13 +51,4 @@ class visa_photo(object):
         fig.savefig(filename, dpi = dpi)
 
 
-# initiate an empty canvas
-pto = visa_photo()
-pto.width = 6
-pto.height = 4
-# photo need to be printed
-img = Image.open('IMG_1135.JPG')
-# print the photo on the canvas
-pto.print_photo(img, '4by6photo.JPG', 500, 2, 2)
-
 
