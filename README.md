@@ -20,8 +20,11 @@ A simple python program to prepare visa photo tile.
     >>> visa_photo.print_photo(img, 'usvisaphoto.JPG', 500, 2, 2)
     ```
 - Original photo
-![](IMG_1135.JPG)
+
+    <img src="./photo/IMG_1135.JPG" width="350">
+
 - Photo tile (US visa standard) made from the program
-![](2by3photo.JPG)
+    <img src="./photo/2by3photo.JPG" width="500">
+
 - Dependent modules: `Image`, `matplotlib`.
 
