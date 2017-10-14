@@ -1,5 +1,3 @@
-
-
 class visa_photo(object):
     from PIL import Image
     import matplotlib.pyplot as plt
