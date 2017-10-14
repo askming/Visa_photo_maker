@@ -8,7 +8,7 @@ A simple python program to prepare visa photo tile.
 
 - Example:
     ```python
-    >>> import image_process.py
+    >>> import image_process
     # initial an empty object 
     >>> visa_photo = visa_photo()
     # set up the dimension of the canvas
