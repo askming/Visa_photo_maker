@@ -8,18 +8,19 @@ A simple python program to prepare visa photo tile.
 - Dependent modules: `Image`, `matplotlib`.
 
 ## Example:
-    ```python
-    >>> import image_process
-    # initial an empty object 
-    >>> visa_photo = visa_photo()
-    # set up the dimension of the canvas
-    >>> visa_photo.width = 6
-    >>> visa_photo.height = 4
-    # read the photo need to be printed
-    >>> img = Image.open('IMG_1135.JPG')
-    # print the photo on the canvas with 500 dpi
-    >>> visa_photo.print_photo(img, 'usvisaphoto.JPG', 500, 2, 2)
-    ```
+
+```python
+>>> import image_process
+# initial an empty object 
+>>> visa_photo = visa_photo()
+# set up the dimension of the canvas
+>>> visa_photo.width = 6
+>>> visa_photo.height = 4
+# read the photo need to be printed
+>>> img = Image.open('IMG_1135.JPG')
+# print the photo on the canvas with 500 dpi
+>>> visa_photo.print_photo(img, 'usvisaphoto.JPG', 500, 2, 2)
+```
 - Original photo
 
     <img src="./photo/IMG_1135.JPG" width="350">
