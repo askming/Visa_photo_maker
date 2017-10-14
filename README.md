@@ -26,5 +26,5 @@ A simple python program to prepare visa photo tile.
     <img src="./photo/IMG_1135.JPG" width="350">
 
 - Photo tile (US visa standard) made from the program
-    <img src="./photo/2by3photo.JPG" width="500">
+    <img src="./photo/usvisaphoto.JPG" width="500">
 
