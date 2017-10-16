@@ -1,7 +1,7 @@
 class visa_photo(object):
     from PIL import Image
     import matplotlib.pyplot as plt
-    def __int__(self, width, height):
+    def __init__(self, width, height):
         self.width = width
         self.height = height
 
