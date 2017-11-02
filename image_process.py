@@ -35,7 +35,6 @@ class visa_photo(object):
         h = self.height
         ncol = int(w / actual_w) # calculate maximum numbers of rows and columns can print
         nrow = int(h / actual_h)
-
         w_space = (w - ncol*actual_w)/2/w
         h_space = (h - nrow*actual_h)/2/h
         fig, ax = plt.subplots(nrow, ncol, figsize = (w, h))
@@ -47,6 +46,3 @@ class visa_photo(object):
                 ax[i,j].axvline(linewidth=0.3, color = 'black')
         fig.subplots_adjust(hspace = 0, wspace = 0, left = w_space, right = 1 - w_space, bottom = h_space, top = 1 - h_space)
         fig.savefig(filename, dpi = dpi)
-
-
-
