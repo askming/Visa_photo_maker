@@ -35,6 +35,7 @@ class visa_photo(object):
         h = self.height
         ncol = int(w / actual_w) # calculate maximum numbers of rows and columns can print
         nrow = int(h / actual_h)
+
         w_space = (w - ncol*actual_w)/2/w
         h_space = (h - nrow*actual_h)/2/h
         fig, ax = plt.subplots(nrow, ncol, figsize = (w, h))
