@@ -49,4 +49,4 @@ class visa_photo(object):
                 ax[i,j].axhline(linewidth=0.3, color = 'black') # add border for each subplot
                 ax[i,j].axvline(linewidth=0.3, color = 'black')
         fig.subplots_adjust(hspace = 0, wspace = 0, left = w_space, right = 1 - w_space, bottom = h_space, top = 1 - h_space)
-        fig.savefig(os.path.join(u'photo', u"%s.jpg" % filename), dpi = dpi)
+        fig.savefig(os.path.join(u'photo', u"%s" % filename), dpi = dpi)
