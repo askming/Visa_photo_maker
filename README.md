@@ -16,7 +16,7 @@ A simple python program to prepare visa photo tile.
 # read the photo need to be printed
 >>> img = Image.open('./photo/IMG_1135.JPG')
 # print the photo on the canvas with 500 dpi
->>> p.print_photo(img, 'usvisaphoto.JPG', 500, 2, 2)
+>>> p.print_photo(img, 'usvisaphoto', 500, 2, 2)
 ```
 - Original photo
 
