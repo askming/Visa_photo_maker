@@ -1,6 +1,8 @@
+from PIL import Image
+import matplotlib.pyplot as plt
+import os
+
 class visa_photo(object):
-    from PIL import Image
-    import matplotlib.pyplot as plt
     def __init__(self, width, height):
         self.width = width
         self.height = height
@@ -11,6 +13,7 @@ class visa_photo(object):
 
     # function to print a photo to the empty canvas
     def print_photo(self, img, filename, dpi, actual_w = 2, actual_h = 2):
+        import matplotlib.pyplot as plt
         # actual_h, actual_w: actual printed height and width (inch) for one photo
         ratio = actual_h / actual_w
         width, height = img.size
@@ -46,4 +49,4 @@ class visa_photo(object):
                 ax[i,j].axhline(linewidth=0.3, color = 'black') # add border for each subplot
                 ax[i,j].axvline(linewidth=0.3, color = 'black')
         fig.subplots_adjust(hspace = 0, wspace = 0, left = w_space, right = 1 - w_space, bottom = h_space, top = 1 - h_space)
-        fig.savefig(filename, dpi = dpi)
+        fig.savefig(os.path.join(u'photo', u"%s.jpg" % filename), dpi = dpi)

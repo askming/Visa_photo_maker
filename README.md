@@ -10,11 +10,11 @@ A simple python program to prepare visa photo tile.
 ## Example:
 
 ```python
->>> import image_process
+>>> from image_process import *
 # initial an empty object with dimension 6 by 4
 >>> p = visa_photo(6, 4)
 # read the photo need to be printed
->>> img = Image.open('IMG_1135.JPG')
+>>> img = Image.open('./photo/IMG_1135.JPG')
 # print the photo on the canvas with 500 dpi
 >>> p.print_photo(img, 'usvisaphoto.JPG', 500, 2, 2)
 ```
